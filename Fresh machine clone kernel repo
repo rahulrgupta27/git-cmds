@@ -1,0 +1,33 @@
+On your laptop do:-
+
+do a git clone
+  git clone https://github.com/rahulrgupta27/383kernel
+  
+  
+how to push your changes:-
+1. Generate public and private keys:-
+  ssh-keygen
+  cat /root/.ssh/id_rsa.pub
+
+2. On github copy key contents
+  a. Goto your repo in git hub, then click on settings tab near "wiki" tab.
+  b. Click on Deploy keys.
+  c. Add deploy key.
+  d. add something in title.
+  e. copy contents from   cat /root/.ssh/id_rsa.pub and paste it to key section and click add key.
+ 
+
+3. Add your global username
+git config --global user.email xxxxx@gmail.com
+git config --global user.name "xxxxxx"
+
+4. commit the code:-
+git commit -a -m "tmp"
+
+5. set remote url so that to push code where.
+git remote set-url origin https://rahulrgupta27@github.com/rahulrgupta27/383kernel.git
+
+6. now you are ready to push the code:-
+  git push
+  (it will ask for passphrase, its the pwd of git hub).
+  
