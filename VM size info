@@ -1,0 +1,9 @@
+vmware running with split files-
+
+if you drive size (say 50G) is less than size of storage specified in vmware (say 100G).
+if you copy a huge amount of data, or compile a kernel or clone a SDK, then you delete that SDK and clone and compile a new one, 
+then inside VM even if total size accumulated (say 30G) is less than drive size (ie 50G), still you might get drive full. bcoz linux doesnt
+overwrite the old allocated nodes, unless it reaches near the VM size fullness.
+
+So always make sure you give the size of VM less than actual drive size.
+(this I observed on my home old dell laptop)
